@@ -90,11 +90,12 @@ npx lerna run build --scope @pythnetwork/price-pusher --include-dependencies
 cd apps/price_pusher
 
 # For EVM
-npm run start -- evm --endpoint wss://example-rpc.com \
-    --pyth-contract-address 0xff1a0f4744e8582DF...... \
-    --price-service-endpoint https://example-hermes-rpc.com \
-    --price-config-file "path/to/price-config.beta.sample.yaml" \
-    --mnemonic-file "path/to/mnemonic.txt" \
+# docker run public.ecr.aws/pyth-network/xc-price-pusher:v7.0.2 \
+npm run start -- evm --endpoint https://virtual.mode.rpc.tenderly.co/7c1ef1ce-e230-4e3b-b8c2-2b6600fbe5f7 \
+    --pyth-contract-address 0xA2aa501b19aff244D90cc15a4Cf739D2725B5729 \
+    --price-service-endpoint https://hermes.pyth.network \
+    --price-config-file "./price-config.yaml" \
+    --mnemonic-file "./mnemonic.txt" \
     [--pushing-frequency 10] \
     [--polling-frequency 5] \
     [--override-gas-price-multiplier 1.1]
