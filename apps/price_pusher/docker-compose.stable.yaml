@@ -13,17 +13,14 @@ services:
 
     # Replace <version> with the latest released image of the price pusher from here:
     # https://gallery.ecr.aws/pyth-network/xc-price-pusher
-    image: public.ecr.aws/pyth-network/xc-price-pusher:v7.0.2
+    image: public.ecr.aws/pyth-network/xc-price-pusher:v<version>
     restart: always
     command:
-      - "npm"
-      - "run"
-      - "start"
       - "--"
       - "evm"
       - "--endpoint"
       # Replace this with RPC endpoint URL for the EVM network.
-      - "https://virtual.mode.rpc.tenderly.co/7c1ef1ce-e230-4e3b-b8c2-2b6600fbe5f7"
+      - "https://virtual.mode.rpc.tenderly.co/bc9276a3-5543-4510-8e6f-4546318b368c"
       - "--mnemonic-file"
       - "/mnemonic"
       # Replace this with the address of the Pyth contract on the EVM network.
