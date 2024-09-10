@@ -91,14 +91,14 @@ cd apps/price_pusher
 
 # For EVM
 # docker run public.ecr.aws/pyth-network/xc-price-pusher:v7.0.2 \
-npm run start -- evm --endpoint https://virtual.mode.rpc.tenderly.co/7c1ef1ce-e230-4e3b-b8c2-2b6600fbe5f7 \
+npm run start -- evm --endpoint https://virtual.mode.rpc.tenderly.co/2bfaaa93-4388-40e5-a081-23ac94de5b48 \
     --pyth-contract-address 0xA2aa501b19aff244D90cc15a4Cf739D2725B5729 \
     --price-service-endpoint https://hermes.pyth.network \
     --price-config-file "./price-config.yaml" \
     --mnemonic-file "./mnemonic.txt" \
-    [--pushing-frequency 10] \
-    [--polling-frequency 5] \
-    [--override-gas-price-multiplier 1.1]
+    --pushing-frequency 10 \
+    --polling-frequency 5 \
+    --override-gas-price-multiplier 1.1 
 
 # For Injective
 npm run start -- injective --grpc-endpoint https://grpc-endpoint.com \

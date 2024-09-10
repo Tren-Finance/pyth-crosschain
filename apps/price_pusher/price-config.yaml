@@ -3,18 +3,9 @@
   time_difference: 60
   price_deviation: 0.5
   confidence_ratio: 1
+
 - alias: WETH/USD
   id: 9d4294bbcd1174d6f2003ec365831e64cc31d9f6f15a2b85399db8d5000960f6
-  time_difference: 60
-  price_deviation: 1
-  confidence_ratio: 1
-  early_update:
-    time_difference: 30
-    price_deviation: 0.5
-    confidence_ratio: 0.1
-
-- alias: MBTC/USD
-  id: 6665073f5bc307b97e68654ff11f3d8875abd6181855814d23ab01b8085c0906
   time_difference: 60
   price_deviation: 1
   confidence_ratio: 1
@@ -33,32 +24,34 @@
     price_deviation: 0.5
     confidence_ratio: 0.1
 
-- alias: USDT + custom calculation
+- alias: EZETH/USD
+  id: 06c217a791f5c4f988b36629af4cb88fad827b2485400a358f3b02886b54de92
+  time_difference: 60
+  price_deviation: 1
+  confidence_ratio: 1
+  early_update:
+    time_difference: 30
+    price_deviation: 0.5
+    confidence_ratio: 0.1
+
+- alias: MBTC/USD
+  id: 6665073f5bc307b97e68654ff11f3d8875abd6181855814d23ab01b8085c0906
+  time_difference: 60
+  price_deviation: 1
+  confidence_ratio: 1
+  early_update:
+    time_difference: 30
+    price_deviation: 0.5
+    confidence_ratio: 0.1
+
+- alias: USDT/USD
   id: 2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b
-  time_difference: 60
+  time_difference: 90
   price_deviation: 1
   confidence_ratio: 1
-  early_update:
-    time_difference: 30
-    price_deviation: 0.5
-    confidence_ratio: 0.1
 
-- alias: USDC + custom calculation
-  id: eaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a
-  time_difference: 60
+- alias: USDC/USD
+  id: 2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b
+  time_difference: 90
   price_deviation: 1
   confidence_ratio: 1
-  early_update:
-    time_difference: 30
-    price_deviation: 0.5
-    confidence_ratio: 0.1
-
-- alias: ETH + custom calculation
-  id: ff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace
-  time_difference: 60
-  price_deviation: 1
-  confidence_ratio: 1
-  early_update:
-    time_difference: 30
-    price_deviation: 0.5
-    confidence_ratio: 0.1

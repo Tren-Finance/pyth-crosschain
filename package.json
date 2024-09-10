@@ -37,5 +37,12 @@
   "engines": {
     "node": ">=18.0.0 <19.0.0"
   },
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "description": "This repository acts as a monorepo for the various components that make up Pyth Crosschain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

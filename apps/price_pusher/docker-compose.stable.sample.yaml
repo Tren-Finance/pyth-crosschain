@@ -23,7 +23,7 @@ services:
       - "evm"
       - "--endpoint"
       # Replace this with RPC endpoint URL for the EVM network.
-      - "https://virtual.mode.rpc.tenderly.co/7c1ef1ce-e230-4e3b-b8c2-2b6600fbe5f7"
+      - "https://virtual.mode.rpc.tenderly.co/2bfaaa93-4388-40e5-a081-23ac94de5b48"
       - "--mnemonic-file"
       - "/mnemonic"
       # Replace this with the address of the Pyth contract on the EVM network.
